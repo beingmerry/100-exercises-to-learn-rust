@@ -2,8 +2,8 @@
 /// calculate the average speed of the journey.
 fn speed(start: u32, end: u32, time_elapsed: u32) -> u32 {
     // TODO: Panic with a custom message if `time_elapsed` is 0
-
-    (end - start) / time_elapsed
+    let distance: u32 = end - start;
+    distance / time_elapsed
 }
 
 #[cfg(test)]
